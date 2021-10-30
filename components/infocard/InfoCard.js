@@ -23,6 +23,7 @@ function InfoCard({
             layout="fill"
             objectFit="cover"
             className="rounded-2xl"
+            alt="infocard"
             />
         </div>
              <div className="flex flex-col pr-4 flex-grow pl-5 " >

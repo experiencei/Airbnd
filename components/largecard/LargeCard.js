@@ -8,6 +8,7 @@ function LargeCard({ img, title, description, buttonText }) {
             layout="fill"
             objectFit="cover"
             className="rounded-xl"
+            alt="largecard"
           />
             </div>
             <div   className="absolute top-1/3 left-12">

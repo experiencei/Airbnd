@@ -1,3 +1,4 @@
+import React from "react"
 import { useRouter } from "next/dist/client/router";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
@@ -5,7 +6,8 @@ import { format } from "date-fns";
 import InfoCard from "../components/infocard/InfoCard";
 import Map from "../components/map/Map";
 
-function search({ searchResults }) {
+
+function Search({ searchResults }) {
     const router = useRouter();
     const { location, startDate, endDate, noOfGuests } = router.query;
     const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
@@ -46,7 +48,7 @@ function search({ searchResults }) {
     )
 }
 
-export default search;
+export default Search;
 
 export async function getServerSideProps() {
     const searchResults = await fetch("https://links.papareact.com/isz").then(
